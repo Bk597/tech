@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechNova Software House</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>TechNova Software House</h1>
+    <nav>
+      <ul>
+        <li onclick="showSection('home')">Home</li>
+        <li onclick="showSection('services')">Services</li>
+        <li onclick="showSection('about')">About Us</li>
+        <li onclick="showSection('contact')">Contact</li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    
+    <section id="home" class="content-section" style="background-image:  url('so.jpg');background-size: 
+    1000px; background-position:left; color: white; padding: 100px 20px; width: 100%; margin:0%;">
+      <div class="background" style="background-color: none; padding: 50px; border-radius: 
+      10px;" >
+       
+        <h3>ENTERPRISE WEB <br>DEVELOPMENT</h3>
+        <p>We have 100+ professional web developers with more than <br>10 years experience delivering useful products.</p>
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="javascript:void(0)" class="cta-button" style="padding: 14px 30px; background-color: #007bff; 
+          color: #fff; text-decoration: none; font-size: 18px; border-radius: 8px;" onclick="showSection('services')">Explore Our Services</a>
+        </div>
+      </div>
+    </section>
+    
+ 
+    <section id="services" class="content-section" style="display: none; padding: 50px 20px;
+     background-color: #f0f8ff;">
+        <h2 style="text-align: center; font-size: 36px; color: #333; margin-bottom: 40px;">Our Services</h2>
+      
+        <div class="services-grid">
+      
+          <div class="service-card">
+            <i class="fas fa-code service-icon"></i>
+            <h3>Web & Mobile App Development</h3>
+            <p>We build fast, scalable, and user-friendly web and mobile applications tailored to your business needs, using the latest technologies like React, Flutter, and Node.js.</p>
+          </div>
+      
+          <div class="service-card">
+            <i class="fas fa-pencil-ruler service-icon"></i>
+            <h3>UI/UX Design</h3>
+            <p>Our expert designers craft intuitive, responsive, and visually engaging interfaces that enhance user satisfaction and improve usability across all platforms.</p>
+          </div>
+      
+          <div class="service-card">
+            <i class="fas fa-user-tie service-icon"></i>
+            <h3>Software Consultancy</h3>
+            <p>Get expert guidance on software strategy, architecture, and technology stack selection to ensure long-term success and sustainability of your projects.</p>
+          </div>
+      
+          <div class="service-card">
+            <i class="fas fa-cloud service-icon"></i>
+            <h3>Cloud Solutions</h3>
+            <p>We offer reliable and secure cloud computing services including AWS, Azure, and Google Cloud to help you scale faster and optimize costs.</p>
+          </div>
+      
+          <div class="service-card">
+            <i class="fas fa-shield-alt service-icon"></i>
+            <h3>Cybersecurity Services</h3>
+            <p>Protect your business with our end-to-end cybersecurity solutions, including threat detection, vulnerability assessments, and compliance support.</p>
+          </div>
+      
+          <div class="service-card">
+            <i class="fas fa-chart-line service-icon"></i>
+            <h3>Digital Marketing</h3>
+            <p>Grow your online presence with SEO, PPC, content marketing, and social media strategies tailored to reach your ideal audience and increase conversions.</p>
+          </div>
+      
+        </div>
+      
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="javascript:void(0)" class="cta-button" onclick="toggleQuote()">Get a Free Quote</a>
+        </div>
+        
+        <div id="quote-message" style="display: none; text-align: center; margin-top: 20px; font-size: 18px; color: #333;">
+          <p>Thank you for your interest! Our team will contact you shortly with a customized solution that suits your business needs.</p>
+        </div>
+        
+      </section>
+      
+     
+      
+
+      <section id="about" class="content-section" style="display: none; padding: 50px 20px; background-color: #f8f9fa;">
+        <h2 style="text-align: center; font-size: 36px; color: #333; margin-bottom: 30px;">About TechNova</h2>
+      
+        <div style="max-width: 1000px; margin: auto; text-align: center;">
+          <p style="font-size: 18px; color: #555; line-height: 1.8;">
+            <strong>TechNova</strong> is a results-driven software company dedicated to helping businesses thrive in the digital era.
+            With over a decade of experience in technology, innovation, and customer success, we specialize in delivering
+            <strong>custom software, mobile apps, cloud solutions, and design services</strong> that empower organizations to scale, streamline, and succeed.
+          </p>
+      
+          <p style="font-size: 18px; color: #555; margin-top: 20px; line-height: 1.8;">
+            Our mission is to combine <strong>cutting-edge technology</strong> with creative thinking to solve real-world problems for businesses
+            of all sizes — from startups to global enterprises. We believe in long-term partnerships, transparent processes,
+            and delivering quality software that makes a difference.
+          </p>
+        </div>
+      
+        <!-- Key Highlights -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
+          <div style="flex: 1 1 250px; max-width: 300px; padding: 20px; background-color: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center;">
+            <i class="fas fa-users" style="font-size: 36px; color: #007bff;"></i>
+            <h3 style="margin-top: 15px; font-size: 20px;">Experienced Team</h3>
+            <p style="color: #666;">100+ expert developers, designers & consultants with 10+ years of combined experience.</p>
+          </div>
+          
+          <div style="flex: 1 1 250px; max-width: 300px; padding: 20px; background-color: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center;">
+            <i class="fas fa-award" style="font-size: 36px; color: #007bff;"></i>
+            <h3 style="margin-top: 15px; font-size: 20px;">Proven Excellence</h3>
+            <p style="color: #666;">Over 200+ successful projects completed across 15+ industries globally.</p>
+          </div>
+          
+          <div style="flex: 1 1 250px; max-width: 300px; padding: 20px; background-color: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center;">
+            <i class="fas fa-globe" style="font-size: 36px; color: #007bff;"></i>
+            <h3 style="margin-top: 15px; font-size: 20px;">Global Reach</h3>
+            <p style="color: #666;">Clients from USA, UK, Canada, Middle East, and Asia trust our solutions.</p>
+          </div>
+        </div>
+      
+       
+       
+      </section>
+      
+      <!-- Font Awesome CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      
+
+    <section id="contact" class="content-section" style="display: none;">
+      <h2>Contact Us</h2>
+      <form onsubmit="submitForm(event)">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="response" class="hidden"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 TechNova Software House. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

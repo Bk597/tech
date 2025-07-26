@@ -22,20 +22,41 @@
   
   <main>
     
-    <section id="home" class="content-section" style="background-image:  url('so.jpg');background-size: 
-    1000px; background-position:left; color: white; padding: 100px 20px; width: 100%; margin:0%;">
-      <div class="background" style="background-color: none; padding: 50px; border-radius: 
-      10px;" >
-       
-        <h3>ENTERPRISE WEB <br>DEVELOPMENT</h3>
-        <p>We have 100+ professional web developers with more than <br>10 years experience delivering useful products.</p>
-        <div style="text-align: center; margin-top: 40px;">
-          <a href="javascript:void(0)" class="cta-button" style="padding: 14px 30px; background-color: #007bff; 
-          color: #fff; text-decoration: none; font-size: 18px; border-radius: 8px;" onclick="showSection('services')">Explore Our Services</a>
-        </div>
+    <section id="home" class="content-section" 
+    style="background-image: url('so.jpg'); 
+           background-size: cover; 
+           background-position: center; 
+           background-repeat: no-repeat;
+           color: white; 
+           padding: 100px 20px; 
+           width: 100%; 
+           margin: 0;
+           min-height: 100vh;
+           max-width: 100%; "> <!-- ✅ ADDED -->
+  
+    <div class="background" 
+         style="background-color:none; 
+                padding: 50px; 
+                border-radius: 10px;">
+                
+      <h3>ENTERPRISE WEB <br>DEVELOPMENT</h3>
+      <p>We have 100+ professional web developers with more than <br>10 years experience delivering useful products.</p>
+      
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="javascript:void(0)" class="cta-button" 
+           style="padding: 14px 30px; 
+                  background-color: #007bff; 
+                  color: #fff; 
+                  text-decoration: none; 
+                  font-size: 18px; 
+                  border-radius: 8px;" 
+           onclick="showSection('services')">
+          Explore Our Services
+        </a>
       </div>
-    </section>
-    
+    </div>
+  </section>
+  
  
     <section id="services" class="content-section" style="display: none; padding: 50px 20px;
      background-color: #f0f8ff;">
